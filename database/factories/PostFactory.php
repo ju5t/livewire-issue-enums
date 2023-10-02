@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Enums\State;
+use App\Enums\Type;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,6 +21,7 @@ class PostFactory extends Factory
         return [
             'title' => 'title',
             'state' => State::Pending,
+            'type' => Type::Article()
         ];
     }
 }
